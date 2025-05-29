@@ -45,7 +45,7 @@ main {
     transition: transform 0.3s ease;
 }
 
-.curiosidade-card: :hover {
+.curiosidade-card :hover {
     transform: scale(1.05)
 }
 
