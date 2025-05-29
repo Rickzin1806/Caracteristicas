@@ -15,7 +15,7 @@ body {
 /* Cabeçalho */
 header {
   background-color: #007bff;
-  color: white;
+  color: #f0f4f8;
   padding: 1rem 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -44,7 +44,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: white;
+  color: #f0f4f8;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -79,7 +79,7 @@ main {
 }
 
 .curiosidade-card {
-  background-color: white;
+  background-color: #f0f4f8;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -104,7 +104,7 @@ main {
 /* Rodapé */
 footer {
   background-color: #007bff;
-  color: white;
+  color: #f0f4f8;
   text-align: center;
   padding: 1.5rem 0;
   margin-top: 3rem;
