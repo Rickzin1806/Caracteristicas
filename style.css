@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #15cb31;
+    background-color: skyblue;
     color: white;
     text-align: center;
     padding: 1.5rem 1rem;
@@ -50,11 +50,11 @@ main {
 }
 
 .curiosidade-card h3 {
-    color: #0077cc;
+    color: #46db3e;
 }
 
 footer {
-  background-color: #15cb31;
+  background-color:  skyblue;
   color: white;
   text-align: center;
   padding: 1rem;
