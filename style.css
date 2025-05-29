@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: skyblue;
+    background-color: #87CEEB;
     color: white;
     text-align: center;
     padding: 1.5rem 1rem;
@@ -54,7 +54,7 @@ main {
 }
 
 footer {
-  background-color:  skyblue;
+  background-color:  #87CEEB;
   color: white;
   text-align: center;
   padding: 1rem;
