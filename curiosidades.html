@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curiosidades Incríveis</title>
+    <meta name="description" content="Descubra curiosidades incríveis sobre a Terra, o corpo humano e muito mais!" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,10 +13,10 @@
     <header>
       <div class="container">
         <h1>Curiosidades Incríveis</h1>
-        <nav>
+        <nav role="navigation">
           <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
             <li><a href="#sugerir">Sugestões</a></li>
           </ul>
         </nav>
@@ -23,35 +24,47 @@
     </header>
 
     <!-- Seção Principal -->
-     <main>
+    <main role="main">
       <section id="intro" class="intro">
-        <h2>Curiosidades Sobre tudo no mundo</h2>
+        <h2>Curiosidades sobre o mundo</h2>
         <p>Agora você vai descobrir várias curiosidades incríveis sobre o mundo!</p>
       </section>
 
-     <section id="curiosidades" class="curiosidades">
-  <div class="container-esquerda">
-    <article class="curiosidade-card">
-     <figure>
-      <img src="terra.png" width="200" height="200" alt="Planeta Terra vista da Lua"/>
-      <figcaption> Curisodades sobre a Terra</figcaption>
-     </figure>
-    </article>
-  </div>
-</section>
+      <section id="curiosidades" class="curiosidades">
+        <div class="container-esquerda">
+          <article class="curiosidade-card">
+            <figure>
+              <img src="terra.png" width="200" height="200" alt="Imagem do planeta Terra visto do espaço" />
+              <figcaption>Curiosidades sobre a Terra</figcaption>
+            </figure>
+          </article>
 
-     <section  id="curiosidades-corpo" class="curiosidades">
-  <div class="container-esquerda">
-    <div class="curiosidade-card">
-      <img src="Corpo.png" width="200" height="200" alt="Corpo Humano">
-      <p> Curiosidades que Você nao sabia sobre seu corpo</p>
-    </div>
-  </div>
-</section>
+          <article class="curiosidade-card">
+            <figure>
+              <img src="Corpo.png" width="200" height="200" alt="Ilustração do corpo humano" />
+              <figcaption>Curiosidades que você não sabia sobre o seu corpo</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <!-- Seção de Sugestões -->
+      <section id="sugerir" class="sugerir">
+        <h2>Sugira uma Curiosidade</h2>
+        <form>
+          <label for="sugestao">Sua sugestão:</label><br />
+          <textarea id="sugestao" name="sugestao" rows="4" cols="50" placeholder="Digite sua curiosidade aqui..."></textarea><br />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
 
     <!-- Rodapé -->
     <footer id="footer">
-      <p>Site desenvolvido por Henrique Gabriell Viveiros de Jesus - Colégio Estadual Vicente Rijo - Londrina PR</p>
+      <p>
+        Site desenvolvido por Henrique Gabriell Viveiros de Jesus - 
+        Colégio Estadual Vicente Rijo - Londrina, PR
+      </p>
     </footer>
 
   </body>
