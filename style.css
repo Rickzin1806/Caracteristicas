@@ -50,7 +50,7 @@ main {
 
 /* Tornar o card clicável */
 .curiosidade-link {
-  text-decoration: green;
+  text-decoration:  none;
   color:  black;
   display: block;
 }
