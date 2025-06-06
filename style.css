@@ -51,26 +51,12 @@ main {
 /* Tornar o card clicável */
 .curiosidade-link {
   text-decoration: none;
-  color: inherit;
+  color: white;
   display: block;
-}
-
-/* Efeito de animação na imagem */
-.curiosidade-card img {
-  width: 200px;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
 }
 
 .curiosidade-card:hover img {
   transform: scale(1.05) rotate(1deg);
-}
-
-/* Adicional: destaque visual ao passar o mouse */
-.curiosidade-card:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-  transition: 0.3s ease;
 }
 
 .curiosidades {
@@ -89,10 +75,27 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Efeito de animação na imagem */
+.curiosidade-card img {
+  width: 200px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.curiosidade-card:hover img {
+  transform: scale(1.05) rotate(1deg);
+}
 .curiosidade-card img {
   max-width: 100%;
   border-radius: 6px;
   margin-bottom: 10px;
+}
+
+/* Adicional: destaque visual ao passar o mouse */
+.curiosidade-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: 0.3s ease;
 }
 
 /* Rodapé */
