@@ -71,7 +71,7 @@ main {
 
 .curiosidades.iniciais .curiosidade-card {
   flex: 1 1 calc(33.33% - 40px);
-  max-width: 400px;
+  max-width: 300px;
 }
 
 /* Curiosidades normais (apenas empilhadas) */
