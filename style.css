@@ -163,8 +163,8 @@ footer {
 }
 
 /* Responsividade - Mobile First */
-@media (max-width: 768px) {
-  header .container {
+@media (max-width: 768px)
+  header container {
     flex-direction: column;
     text-align: center;
   }
@@ -190,3 +190,4 @@ footer {
   }
 
   .curiosidades:not(.iniciais) .curiosidade-c
+
