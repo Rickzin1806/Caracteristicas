@@ -1,4 +1,4 @@
-/* Reset e Configurações Gerais */
+/* Estilo Geral */
 * {
   margin: 0;
   padding: 0;
@@ -25,11 +25,6 @@ header .container {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  flex-wrap: wrap;
-}
-
-header h1 {
-  font-size: 2.5rem;
 }
 
 nav ul {
@@ -46,10 +41,10 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #ffcc00; /* Cor de destaque ao passar o mouse */
 }
 
-/* Conteúdo Principal */
+/* Conteúdo principal */
 main {
   flex: 1;
   padding: 20px;
@@ -65,19 +60,7 @@ main {
   color: #333;
 }
 
-/* Seção de Navegação */
-section ul li a {
-  text-decoration: none;
-  color: #004080;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-section ul li a:hover {
-  color: #ff6600;
-}
-
-/* Cards de Curiosidades Iniciais - Lado a Lado */
+/* Curiosidades Iniciais - Cards lado a lado */
 .curiosidades.iniciais {
   display: flex;
   flex-wrap: wrap;
@@ -91,15 +74,25 @@ section ul li a:hover {
   max-width: 300px;
 }
 
-/* Estilo Geral dos Cards */
+/* Curiosidades normais (apenas empilhadas) */
+.curiosidades:not(.iniciais) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Cards de curiosidades */
 .curiosidade-card {
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
+  width: 80%;
+  max-width: 400px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
 }
 
 .curiosidade-card img {
@@ -111,7 +104,7 @@ section ul li a:hover {
 
 .curiosidade-card h3 {
   color: #004080;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .curiosidade-card p {
@@ -125,44 +118,15 @@ section ul li a:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Cards de Curiosidades Normais (Empilhados) */
-.curiosidades:not(.iniciais) {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.curiosidades:not(.iniciais) .curiosidade-card {
-  width: 80%;
-  max-width: 400px;
-}
-
-/* Botão Voltar ao Início */
-p a[href="#inicio"] {
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #004080;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-p a[href="#inicio"]:hover {
-  color: #ff6600;
-}
-
 /* Rodapé */
 footer {
   background-color: #222;
   color: #ccc;
   text-align: center;
   padding: 15px 10px;
-  font-size: 0.9rem;
 }
 
-/* Responsividade - Mobile First */
+/* Responsividade */
 @media (max-width: 768px) {
   header .container {
     flex-direction: column;
@@ -173,7 +137,7 @@ footer {
     font-size: 2rem;
   }
 
-  nav ul {
+  header nav ul {
     flex-direction: column;
     gap: 1rem;
   }
@@ -183,13 +147,11 @@ footer {
     align-items: center;
   }
 
-  .curiosidades.iniciais .curiosidade-card,
-  .curiosidade-card {
+  .curiosidades.iniciais .curiosidade-card {
     width: 90%;
-    max-width: none;
   }
 
-  .curiosidades:not(.iniciais) .curiosidade-card {
+  .curiosidade-card {
     width: 90%;
   }
 }
