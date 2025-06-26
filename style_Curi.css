@@ -111,7 +111,7 @@
 }
 
 @media (max-width: 480px) {
-    .curiosidade-card
+  .curiosidade-card {
+    width: 100%; /* Em telas muito pequenas, os cards ocupam 100% da largura */
+  }
 }
-    width:
-    
