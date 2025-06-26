@@ -69,12 +69,12 @@
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
-  width: 100%;  /* Alterado para 100% para que os cards ocupem toda a largura disponível */
+  width: 100%;  /* Cards agora ocupam toda a largura disponível */
   max-width: 400px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 10px 0;  /* Adicionado para garantir o espaçamento entre os cards */
+  margin: 10px 0;  /* Espaçamento entre os cards */
 }
 
 .curiosidade-card img {
@@ -108,13 +108,15 @@
 
   /* Cards gerais (sem sentido) ajustados para ocuparem 100% da largura */
   .curiosidade-card {
-    width: 100%;  /* Ajustado para 100% da largura */
+    width: 100%;  /* Agora ocupa toda a largura disponível */
+    margin: 20px 0;  /* Ajustei o espaçamento para maior separação */
   }
 }
 
 @media (max-width: 480px) {
-  /* Para telas menores, os cards também ocuparão 100% da largura */
+  /* Para telas muito pequenas, os cards agora ocupam 100% da largura */
   .curiosidade-card {
     width: 100%; /* Em telas muito pequenas, os cards ocupam 100% da largura */
+    margin: 15px 0;  /* Ajustado para um espaçamento um pouco menor */
   }
 }

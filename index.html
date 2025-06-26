@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+
     <!-- Cabeçalho -->
     <header>
       <div class="container">
@@ -23,47 +23,77 @@
     </header>
 
     <!-- Seção Principal -->
-    <main>
+    <main role="main">
+      
       <!-- Introdução -->
-      <section class="intro">
-        <h2>Descubra curiosidades fascinantes sobre o mundo ao nosso redor!</h2>
-        <p>Prepare-se para se surpreender com fatos incríveis e pouco conhecidos.</p>
+      <section id="intro" class="intro">
+        <h2>Curiosidades sobre o Mundo</h2>
+        <p>Agora você vai descobrir várias curiosidades incríveis sobre o mundo!</p>
       </section>
 
-      <!-- Curiosidades Iniciais (Cards) -->
-      <section id="ancora1" class="curiosidades iniciais">
-        <div class="curiosidade-card">
-          <div class="manchete">
-          </div>
-          <img src="yuyube.png" height="200" width="200" alt="Youtube" />
-          
-        <h1>Você sabia?</h1>
+      <!-- Seção de Navegação de Curiosidades -->
+      <section class="curiosidades-nav">
+        <h2>Curiosidades</h2>
+        <ul>
+          <li><a href="#ancora1">Curiosidades Iniciais</a></li>
+          <li><a href="#ancora2">💧 Água Quente</a></li>
+          <li><a href="#ancora3">🍌 Bananas</a></li>
+          <li><a href="#ancora4">🦒 Girafas</a></li>
+          <li><a href="#ancora5">🦩 Flamingos</a></li>
+        </ul>
+      </section>
+
+      <!-- Curiosidades -->
+      <section id="curiosidades" class="curiosidades">
         
-        <p>
-            A cada minuto, cerca de 72 horas de conteúdo são enviadas ao
-            site de vídeos Youtube. Isso mostra a quantidade de informação
-            que é compartilhada diariamente na plataforma.
+        <!-- Curiosidades Sem Sentido -->
+        <section class="intro">
+          <h2>Curiosidades Sem Sentido</h2>
+          <p>Duvido que você sabia disso!!!</p>
+        </section>
+
+        <!-- Curiosidade 1 - Água Quente -->
+        <div id="ancora2" class="curiosidade-card">
+          <h3>💧 Curiosidades sobre Água Quente</h3>
+          <p>
+            A água quente congela mais rápido que a água fria. Isso é conhecido
+            como efeito Mpemba, mas até hoje os cientistas não sabem exatamente
+            por que acontece.
           </p>
         </div>
 
-        <div class="curiosidade-card">
-          <img src="lua.png" height="200" width="200" alt="Lua" />
-          <h3>Fato Curioso</h3>
-          <p>A Lua se afasta da Terra cerca de 3,8 cm por ano.</p>
+        <!-- Curiosidade 2 - Bananas -->
+        <div id="ancora3" class="curiosidade-card">
+          <h3>🍌 Curiosidades sobre Bananas</h3>
+          <p>
+            Bananas são radioativas. Elas contêm potássio-40, um isótopo
+            radioativo natural. Não se preocupe, você precisaria comer toneladas
+            de bananas para sentir qualquer efeito!
+          </p>
         </div>
 
-        <div class="curiosidade-card">
-          <img src="estrelas.png" height="200" width="200" alt="Estrelas" />
-          <h3>Incrível!</h3>
+        <!-- Curiosidade 3 - Girafas -->
+        <div id="ancora4" class="curiosidade-card">
+          <h3>🦒 Curiosidades sobre Girafas</h3>
           <p>
-            Existem mais estrelas no universo do que grãos de areia em todas as
-            praias da Terra.
+            As girafas têm línguas de 45 cm. Elas usam essa língua longa para
+            pegar folhas de árvores altas e podem até se limpar com ela.
+          </p>
+        </div>
+
+        <!-- Curiosidade 4 - Flamingos -->
+        <div id="ancora5" class="curiosidade-card">
+          <h3>🦩 Curiosidades sobre Flamingos</h3>
+          <p>
+            Os flamingos são rosas por causa da comida. Eles se alimentam de
+            algas e camarões, que contêm pigmentos vermelhos e laranjas, o que
+            dá a cor característica.
           </p>
         </div>
       </section>
 
       <!-- Link para voltar ao início -->
-      <p class="back-to-top">
+      <p>
         <a href="#inicio">Voltar ao Início</a>
       </p>
     </main>
@@ -71,9 +101,9 @@
     <!-- Rodapé -->
     <footer id="footer">
       <p>
-        Site desenvolvido por Henrique Gabriell Viveiros de Jesus - Colégio
-        Estadual Vicente Rijo - Londrina PR
+        Site desenvolvido por Henrique Gabriell Viveiros de Jesus - Colégio Estadual Vicente Rijo - Londrina, PR
       </p>
     </footer>
+
   </body>
 </html>
