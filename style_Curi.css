@@ -1,0 +1,115 @@
+/* Curiosidades - Estilo específico */
+.curiosidades-nav {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.curiosidades-nav h2 {
+  font-size: 2rem;
+  color: #004080;
+}
+
+.curiosidades-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.curiosidades-nav ul li {
+  margin: 10px 0;
+}
+
+.curiosidades-nav ul li a {
+  color: #004080;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.curiosidades-nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Curiosidades Iniciais (cards) */
+.curiosidades.iniciais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.curiosidade-card.inicial {
+  flex: 1 1 calc(33.33% - 40px);
+  max-width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.curiosidade-card.inicial img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.curiosidade-card.inicial h3 {
+  color: #004080;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.curiosidade-card.inicial p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Curiosidades gerais (sem sentido) */
+.curiosidade-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curiosidade-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.curiosidade-card h3 {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.curiosidade-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.curiosidade-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para curiosidades */
+@media (max-width: 768px) {
+  .curiosidade-card.inicial {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+
+  .curiosidade-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .curiosidade-card {
+    width:
