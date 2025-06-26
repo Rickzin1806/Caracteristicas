@@ -40,7 +40,7 @@ nav a {
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+nav ul li a:hover {
   color: #ffcc00; /* Cor de destaque ao passar o mouse */
 }
 
