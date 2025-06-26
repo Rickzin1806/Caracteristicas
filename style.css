@@ -39,7 +39,7 @@
 }
 
 .curiosidade-card.inicial {
-  flex: 1 1 calc(33.33% - 40px);
+  flex: 1 1 calc(33.33% - 40px); /* Distribui os cards em 3 colunas */
   max-width: 300px;
   box-sizing: border-box;
   text-align: center;
@@ -83,40 +83,3 @@
   margin-bottom: 15px;
 }
 
-.curiosidade-card h3 {
-  color: #004080;
-  margin-bottom: 15px;
-}
-
-.curiosidade-card p {
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.curiosidade-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsividade para curiosidades */
-@media (max-width: 768px) {
-  .curiosidade-card.inicial {
-    flex: 1 1 100%;
-    max-width: none;
-  }
-
-  /* Cards gerais (sem sentido) ajustados para ocuparem 100% da largura */
-  .curiosidade-card {
-    width: 100%;  /* Agora ocupa toda a largura disponível */
-    margin: 20px 0;  /* Ajustei o espaçamento para maior separação */
-  }
-}
-
-@media (max-width: 480px) {
-  /* Para telas muito pequenas, os cards agora ocupam 100% da largura */
-  .curiosidade-card {
-    width: 100%; /* Em telas muito pequenas, os cards ocupam 100% da largura */
-    margin: 15px 0;  /* Ajustado para um espaçamento um pouco menor */
-  }
-}
