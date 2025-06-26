@@ -64,7 +64,7 @@ main {
 .curiosidades.iniciais {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
   margin-top: 40px;
 }
@@ -72,6 +72,12 @@ main {
 .curiosidades.iniciais .curiosidade-card {
   flex: 1 1 calc(33.33% - 40px);
   max-width: 300px;
+  box-sizing: border-box;
+}
+
+.curiosidades.iniciais .curiosidade-card img {
+  max-width: 100%; /* Para garantir que a imagem não ultrapasse o limite do cartão */
+  height: auto;
 }
 
 /* Curiosidades normais (apenas empilhadas) */
@@ -148,10 +154,17 @@ footer {
   }
 
   .curiosidades.iniciais .curiosidade-card {
-    width: 90%;
+    width: 90%; /* Em telas menores, os cards ocupam 90% da largura */
+    max-width: none; /* Para que a largura não fique restrita */
   }
 
   .curiosidade-card {
     width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .curiosidade-card {
+    width: 100%; /* Em telas muito pequenas, os cards ocupam 100% da largura */
   }
 }
