@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 /* Cabeçalho */
 header {
-  background-color: #cc0e0eab;
+  background-color: #a50a0abc;
   color: #fff;
   padding: 20px 0;
 }
@@ -171,7 +171,7 @@ a:hover {
 
 /* Rodapé */
 footer {
-  background-color:  #b10b0bab;
+  background-color:  #a50a0abc;
   color: #fff;
   text-align: center;
   padding: 20px;

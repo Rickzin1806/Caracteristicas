@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 /* Cabeçalho */
 header {
-  background-color: #b10b0bab;
+  background-color: #a50a0abc;
   color: #fff;
   padding: 20px 0;
 }
@@ -137,6 +137,12 @@ video {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
 
 /* Links de navegação */
 a {
@@ -151,7 +157,7 @@ a:hover {
 
 /* Rodapé */
 footer {
-  background-color:  #b10b0bab;
+  background-color:  #a50a0abc;
   color: #fff;
   text-align: center;
   padding: 20px;
