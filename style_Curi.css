@@ -15,12 +15,12 @@ body {
 }
 
 h1, h2, h3 {
-  color: #000000;
+  color: #170676;
 }
 
 /* Cabeçalho */
 header {
-  background-color: #0fc1e1;
+  background-color: #08a203a0;
   color: #fff;
   padding: 20px 0;
 }
@@ -60,7 +60,7 @@ nav ul li a:hover {
 
 .intro h2 {
   font-size: 2rem;
-  color: #2600ff;
+  color: #170676;
 }
 
 .intro p {
@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 .curiosidades-nav h2 {
   font-size: 2rem;
-  color: #2600ff;
+  color: #170676;
 }
 
 .curiosidades-nav ul {
@@ -89,7 +89,7 @@ nav ul li a:hover {
 }
 
 .curiosidades-nav ul li a {
-  color: #2600ff;
+  color: #170676;
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s ease;
@@ -111,7 +111,7 @@ nav ul li a:hover {
 }
 
 .curiosidade-card h3 {
-  color: #2600ff;
+  color: #170676;
   margin-bottom: 15px;
 }
 
@@ -151,7 +151,7 @@ a:hover {
 
 /* Rodapé */
 footer {
-  background-color:  #0fc1e1;
+  background-color:  #08a203a0;
   color: #fff;
   text-align: center;
   padding: 20px;
